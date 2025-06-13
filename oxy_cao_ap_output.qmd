@@ -1,0 +1,205 @@
+---
+title: "oxy cao áp"
+author: "SSTT "
+format:
+    docx:
+      toc: false
+      number-sections: false
+      fig-dpi: 300          # optional for PNG fallback
+      dev: dml              # chèn ggplot dạng vector
+      reference-doc: "source/sstt_dtcs_quato_words_input.docx"
+      fig-align: center
+      
+
+#bibliography: sstt_reference.bib
+bibliography: "source/oxy_cao_ap.bib"
+csl: "source/ama-brackets.csl"
+lang: vi
+language:
+  labels:
+    fig: Hình
+editor: source
+---
+
+
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, message = FALSE, warning = FALSE)
+source(here::here("R", "run_all.R"))
+
+```
+
+
+::: {custom-style="CAN GIUA DAM 14 ONE"}
+LỜI NÓI ĐẦU
+:::
+`r ft_msg`
+
+`r ft_name`
+
+```{=openxml}
+<w:p><w:r><w:br/></w:r></w:p>
+```
+
+`r quote`
+
+```{=openxml}
+<w:p><w:r><w:br/></w:r></w:p>
+```
+TP Hồ Chí Minh: `r formatted_datetime`
+
+
+
+
+
+
+::: {custom-style="CAN GIUA DAM 14 ONE"}
+ĐẶT VẤN ĐỀ
+:::
+
+# Đặt vấn đề
+
+Sa sút trí tuệ (SSTT) là một vấn đề y tế toàn cầu với tỷ lệ gia tăng nhanh chóng ở người cao tuổi. Tổ chức Y tế Thế giới dự báo số người mắc SSTT sẽ đạt trên 150 triệu vào năm 2050. Tại Việt Nam, các nghiên cứu ghi nhận tỷ lệ SSTT trong cộng đồng từ 4–8% ở nhóm ≥ 65 tuổi.
+
+Liệu pháp Ô xy cao áp (Hyperbaric Oxygen Therapy – HBOT) là phương pháp điều trị sử dụng ô xy tinh khiết với áp suất cao, nhằm tăng lượng ô xy hòa tan trong máu, cải thiện tưới máu não, giảm viêm và tăng cường chuyển hóa tế bào thần kinh. Nghiên cứu gần đây cho thấy HBOT có thể cải thiện chức năng nhận thức ở bệnh nhân Alzheimer mức độ nhẹ đến trung bình [@zhang2021hyperbaric].
+
+Tuy nhiên, tại Việt Nam, chưa có nghiên cứu hệ thống đánh giá hiệu quả của HBOT trong điều trị SSTT. Do đó, chúng tôi thực hiện đề tài này nhằm đánh giá hiệu quả lâm sàng của liệu pháp HBOT trên người bệnh SSTT mức độ nhẹ và trung bình.
+
+Mục tiêu
+
+Mục tiêu tổng quát
+
+Đánh giá hiệu quả của liệu pháp Ô xy cao áp trong cải thiện chức năng nhận thức ở bệnh nhân sa sút trí tuệ mức độ nhẹ và trung bình.
+
+Mục tiêu cụ thể
+
+- So sánh điểm MMSE trước và sau điều trị bằng HBOT.
+- Đánh giá thay đổi các test nhận thức khác trước và sau điều trị (TMT-A/B, nhớ lại, đọc số, vẽ đồng hồ...).
+- So sánh gánh nặng người chăm sóc qua điểm ZBI.
+- Ghi nhận các tác dụng không mong muốn trong quá trình điều trị HBOT.
+
+
+# TỔNG QUANG TÀI LIỆU
+Tổng quan tài liệu
+Sa sút trí tuệ: tình hình dịch tễ và ảnh hưởng
+Sa sút trí tuệ (SSTT) là một rối loạn tiến triển gây suy giảm trí nhớ, ngôn ngữ, chú ý và chức năng điều hành, ảnh hưởng nghiêm trọng đến chất lượng cuộc sống. Theo Tổ chức Y tế Thế giới (WHO), đến năm 2050, số người mắc SSTT toàn cầu có thể lên đến 152 triệu người, chủ yếu ở các nước đang phát triển [@who2021dementia]. Tại Việt Nam, một số khảo sát ghi nhận tỷ lệ SSTT ở người ≥ 65 tuổi dao động từ 4–8% [@pham2019dementia].
+
+Gánh nặng của SSTT không chỉ đến từ chính bệnh lý mà còn từ áp lực đối với người chăm sóc, tăng chi phí điều trị và giảm năng suất lao động xã hội [@adelman2014caregiver].
+
+Cơ sở sinh lý học của liệu pháp ô xy cao áp
+Liệu pháp Ô xy cao áp (Hyperbaric Oxygen Therapy – HBOT) sử dụng ô xy tinh khiết với áp suất cao (thường 2–3 ATA) giúp tăng lượng ô xy hòa tan trong huyết tương, tăng tưới máu mô, cải thiện chuyển hóa tế bào và giảm stress oxy hóa. Trên mô não bị tổn thương hoặc thiếu máu mãn tính, HBOT có thể làm giảm tình trạng viêm, phục hồi chức năng ti thể và tăng biểu hiện yếu tố thần kinh dinh dưỡng như BDNF [@eimer2022hyperbaric].
+
+Bằng chứng quốc tế về hiệu quả của HBOT trong sa sút trí tuệ
+Nghiên cứu của Zhang và cộng sự (2021) thực hiện trên 60 bệnh nhân Alzheimer mức độ nhẹ–trung bình cho thấy liệu trình HBOT kéo dài 40 buổi giúp cải thiện điểm MMSE trung bình 2,3 điểm, đồng thời cải thiện đáng kể trí nhớ trì hoãn và khả năng chú ý so với nhóm chứng [@zhang2021hyperbaric].
+
+Một tổng quan hệ thống năm 2023 cũng ghi nhận HBOT có thể cải thiện chức năng nhận thức, đặc biệt ở nhóm sa sút trí tuệ mạch máu và Alzheimer giai đoạn sớm, tuy nhiên cần thêm nghiên cứu chất lượng cao để khẳng định hiệu quả [@li2023systematic].
+
+Các công cụ đánh giá thần kinh nhận thức
+Thang điểm MMSE (Mini-Mental State Examination) là công cụ sàng lọc phổ biến, đánh giá các lĩnh vực nhận thức bao gồm định hướng, ghi nhớ, chú ý, tính toán, ngôn ngữ và sao chép hình vẽ [@folstein1975mmse]. Ngoài ra, các thang đo khác như:
+
+TMT-A, TMT-B: đo tốc độ xử lý và linh hoạt nhận thức [@reitan1958tmta].
+
+Digit Span (xuôi/ngược): đánh giá trí nhớ ngắn hạn và làm việc.
+
+Clock Drawing Test: sàng lọc chức năng thị giác – không gian và điều hành.
+
+Word List Recall/Recognition: kiểm tra trí nhớ học thuộc và hồi tưởng trì hoãn [@delis2000cvlt].
+
+Các công cụ này đều được khuyến nghị sử dụng trong các nghiên cứu lâm sàng về SSTT, cả trong nước và quốc tế.
+
+Tình hình nghiên cứu tại Việt Nam
+Một số nghiên cứu tại Việt Nam chủ yếu tập trung vào đánh giá sa sút trí tuệ bằng MMSE, MoCA hoặc test Clock Drawing, tuy nhiên chưa có công trình nào ứng dụng HBOT trong điều trị SSTT. Một nghiên cứu nhỏ tại Bệnh viện Lão khoa Trung ương năm 2020 sử dụng can thiệp vận động kết hợp liệu pháp nhận thức ghi nhận cải thiện điểm MMSE sau 3 tháng can thiệp [@nguyen2020cognitive]. Đây là cơ sở bước đầu cho việc nghiên cứu thêm các phương pháp hỗ trợ mới như HBOT.
+
+# ĐỐI TƯỢNG VÀ PHƯƠNG PHÁP NGHIÊN CỨU
+
+## Đối tượng nghiên cứu
+
+- Bệnh nhân ≥ 60 tuổi được chẩn đoán sa sút trí tuệ mức độ nhẹ hoặc trung bình theo tiêu chuẩn DSM-5.
+- Điều trị nội trú tại Bệnh viện 30-4.
+
+## Thiết kế nghiên cứu
+
+- Nghiên cứu can thiệp lâm sàng so sánh trước – sau (pre-post intervention), không nhóm chứng.
+
+## Cỡ mẫu
+
+Tính theo công thức so sánh hai trung bình cặp đôi (paired t-test), với alpha = 0,05; beta = 0,2 (power = 80%), kỳ vọng cải thiện MMSE trung bình 2 điểm.
+
+## Tiêu chuẩn chọn mẫu
+
+- Đồng ý tham gia nghiên cứu và ký cam kết tự nguyện.
+- Không có bệnh cấp tính, tâm thần, hoặc khiếm khuyết nặng.
+
+## Tiêu chuẩn loại trừ
+
+- Chống chỉ định với liệu pháp HBOT (ví dụ: tràn khí màng phổi, COPD nặng).
+- Không hợp tác hoặc bỏ dở điều trị.
+
+## Biến số và công cụ đánh giá
+
+| Biến số | Công cụ đánh giá | Đơn vị |
+|--------|------------------|--------|
+| MMSE – Trạng thái tâm thần tối thiểu | Thang MMSE | điểm |
+| Nhớ lại ngay (Word List Recall) | Danh sách từ | điểm |
+| Nhớ lại có trì hoãn (Delayed Recall) | Sau 10–20 phút | điểm |
+| Nhận biết có trì hoãn (Delayed Recognition) | Danh sách từ | điểm |
+| Trail Making Test A (TMT-A) | Tốc độ nối số | giây |
+| Trail Making Test B (TMT-B) | Tốc độ nối số-chữ | giây |
+| Đọc xuôi dãy số (Digit Span Forward) | WAIS-IV | số lượng đúng |
+| Đọc ngược dãy số (Digit Span Backward) | WAIS-IV | số lượng đúng |
+| Nói lưu loát tên con vật | 60 giây | số từ |
+| Vẽ đồng hồ (Clock Drawing Test) | Thang Gagnon | điểm |
+| Gánh nặng người chăm sóc | Thang ZBI | điểm |
+| Tác dụng phụ | Ghi nhận lâm sàng | mô tả |
+
+## Quy trình thực hiện
+
+1. Tuyển chọn và giải thích cho người bệnh và người chăm sóc.
+2. Đánh giá ban đầu toàn bộ các test nhận thức và ZBI.
+3. Thực hiện liệu trình HBOT:
+   - Áp suất 2,0–2,5 ATA.
+   - Thời lượng mỗi buổi: 60–90 phút.
+   - Tần suất: 2 lần/ngày, 5 ngày/tuần, liên tục 3 tuần (30 buổi).
+4. Sau điều trị 1 tuần, thực hiện lại toàn bộ các test nhận thức và ZBI.
+5. Ghi nhận và xử lý các tác dụng không mong muốn nếu có.
+
+## Phân tích số liệu
+
+- Nhập liệu bằng R 4.3 hoặc SPSS 26.0.
+- So sánh điểm trước và sau điều trị: test t cặp, hoặc Wilcoxon nếu không phân phối chuẩn.
+- Mức ý nghĩa thống kê: p < 0,05.
+
+## Đạo đức nghiên cứu
+
+- Được chấp thuận bởi Hội đồng Đạo đức Y Sinh học của Bệnh viện 30-4.
+- Người tham gia có quyền rút lui bất kỳ lúc nào, dữ liệu được bảo mật tuyệt đối.
+
+## Dự kiến kết quả và ý nghĩa
+
+- Cải thiện điểm MMSE và các test nhận thức sau điều trị.
+- Giảm gánh nặng tâm lý người chăm sóc.
+- Góp phần mở rộng ứng dụng HBOT trong điều trị SSTT tại Việt Nam.
+
+## Kinh phí và thời gian
+
+- Thời gian nghiên cứu: từ 01/2026 đến 12/2026.
+- Kinh phí: đề xuất Bộ Y tế tài trợ.
+
+
+
+# KẾT QUẢ NGHIÊN CỨU
+
+Có 
+### Biểu đồ mối tương quan MMSE với các test thần kinh nhận thức khác
+
+
+
+# BÀN LUẬN
+
+kinh nhận thức chi tiết chưa luôn sẵn có.
+
+
+
+::: {custom-style="CAN GIUA DAM 14 ONE"}
+TÀI LIỆU THAM KHẢO
+:::
